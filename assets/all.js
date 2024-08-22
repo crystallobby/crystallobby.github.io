@@ -1,5 +1,5 @@
 (async () => {
-    // kod hujowy pewnie ale shut the fuck up bby
+    // kod hujowy pewnie ale shut the fuck up babe
     // ~olafciooox
     const html = document.documentElement;
     addEventListener("scroll", ev => {

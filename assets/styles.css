@@ -101,6 +101,7 @@ a.al:hover {
 html.scrolled #home > * {
     translate: 0 calc(var(--scrolltop) / 2);
     filter: blur(5px);
+    pointer-events: none;
 }
 
 #home > .ip {
@@ -139,6 +140,11 @@ html.scrolled #home > * {
 
 h1, h2, h3, h4, h5, h6 {
     letter-spacing: 0.25px;
+    text-shadow: 0 1px 7px #0002;
+}
+
+:is(h1, h2, h3, h4, h5, h6) + p {
+    text-shadow: 0 1px 9px #00000005;
 }
 
 #zespol {
@@ -172,12 +178,14 @@ h1, h2, h3, h4, h5, h6 {
     background: #fff3;
     box-shadow: 0 0 5px 0 #0002;
     padding: 5px;
+    text-shadow: 0 1px 7px #0005;
 }
 
 .people > .guy > img {
     width: 90px;
     height: 90px;
     border-radius: 8px;
+    box-shadow: 0 0 5px 0 #0003;
 }
 
 img {
@@ -186,5 +194,53 @@ img {
     -webkit-user-drag: none;
 }
 
+#tryby {
+    background: #fff2;
+    backdrop-filter: blur(5px);
+    display: grid;
+    place-items: center;
+    padding: 2% 0;
+}
+
 /* Bakground Element Unordered List lmfao nazwa dluga asf */
-.bgeul {}
+.bgeul {
+    list-style: none;
+    margin: 6px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+    justify-content: center;
+    padding: 8px;
+    background: #fff3;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 0 #0003;
+    backdrop-filter: blur(5px);
+    max-width: calc(calc(8px * 2) + calc((200px + 7px) * 5) - 7px);
+}
+
+.bgeul > .elem {
+    width: 200px;
+    border-radius: 8px;
+    background: #fff3;
+    box-shadow: 0 0 5px 0 #0002;
+    padding: 7px;
+    display: grid;
+    place-items: center;
+    gap: 7px;
+}
+
+.bgeul > .elem > img {
+    width: 190px;
+    height: 101.72px;
+    border-radius: 8px;
+    box-shadow: 0 0 5px 1px #0002;
+}
+
+button, input, select, textarea {
+    border: none;
+    border-radius: 0;
+    font: inherit;
+    color: inherit;
+    background: none;
+    box-shadow: none;
+}
