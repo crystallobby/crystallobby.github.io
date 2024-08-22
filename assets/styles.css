@@ -57,6 +57,10 @@ a {
     transition: all 0.45s cubic-bezier(0.23, 1, 0.320, 1);
 }
 
+html.navbarblack nav a.al {
+    background-image: linear-gradient(90deg, #3f6489, #1a497b);
+}
+
 a.al {
     color: #0000;
     background: linear-gradient(90deg, #517ca7, #71a0d2);
@@ -194,12 +198,20 @@ img {
     -webkit-user-drag: none;
 }
 
-#tryby {
+#tryby, #moderated {
     background: #fff2;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(9px);
     display: grid;
     place-items: center;
     padding: 2% 0;
+}
+
+#tryby {
+    box-shadow: inset 0 0 5px #fff1;
+}
+
+#moderated {
+    background: #fff3;
 }
 
 /* Bakground Element Unordered List lmfao nazwa dluga asf */
@@ -220,20 +232,42 @@ img {
 
 .bgeul > .elem {
     width: 200px;
+    height: 105px;
     border-radius: 8px;
     background: #fff3;
     box-shadow: 0 0 5px 0 #0002;
-    padding: 7px;
+    padding: 3px;
+    font-size: 15px;
     display: grid;
-    place-items: center;
+    place-items: flex-end center;
     gap: 7px;
+    position: relative;
+}
+
+.bgeul > .elem::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 25px;
+    background: #0008;
+    box-shadow: 0 0 5px 0 #0008;
+    backdrop-filter: blur(3px);
+    border-radius: 0 0 8px 8px;
 }
 
 .bgeul > .elem > img {
-    width: 190px;
-    height: 101.72px;
+    width: 100%;
+    height: 100%;
     border-radius: 8px;
     box-shadow: 0 0 5px 1px #0002;
+    position: absolute;
+}
+
+.bgeul > .elem > :not(img) {
+    z-index: 2;
+    position: relative;
 }
 
 footer {
