@@ -236,6 +236,28 @@ img {
     box-shadow: 0 0 5px 1px #0002;
 }
 
+footer {
+    background: #fff8;
+    box-shadow: 0 0 5px #fff8;
+    backdrop-filter: blur(5px);
+    display: flex;
+    height: 150px;
+}
+
+footer > * {
+    padding: 16px 27px;
+    display: grid;
+    align-content: baseline;
+}
+
+footer a {
+    color: #2865a1;
+}
+
+footer a:hover {
+    color: #4379af;
+}
+
 button, input, select, textarea {
     border: none;
     border-radius: 0;
