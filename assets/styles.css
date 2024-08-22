@@ -207,7 +207,7 @@ img {
 }
 
 #tryby {
-    box-shadow: inset 0 0 5px #fff1;
+    box-shadow: inset 0 0 5px #fff1, inset 0 5px 9px -3px #fff3;
 }
 
 #moderated {
@@ -255,6 +255,20 @@ img {
     box-shadow: 0 0 5px 0 #0008;
     backdrop-filter: blur(3px);
     border-radius: 0 0 8px 8px;
+}
+
+.bgeul > .elem.soon::before {
+    content: 'SOON';
+    color: #fff;
+    text-shadow: 0 0 5px #0008;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: #0004;
+    backdrop-filter: blur(5px);
+    display: grid;
+    place-content: center;
+    z-index: 4;
 }
 
 .bgeul > .elem > img {
