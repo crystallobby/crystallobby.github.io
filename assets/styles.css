@@ -198,7 +198,7 @@ img {
     -webkit-user-drag: none;
 }
 
-#tryby, #moderated {
+#tryby, #moderated, #bepartofus {
     background: #fff2;
     backdrop-filter: blur(9px);
     display: grid;
@@ -212,6 +212,16 @@ img {
 
 #moderated {
     background: #fff3;
+}
+
+#bepartofus {
+    background: #fff3;
+    box-shadow: inset 0 85px 25px 0 #0003, 0 0 5px #0003;
+}
+
+#bepartofus > a {
+    text-decoration: none;
+    margin-top: 15px;
 }
 
 /* Bakground Element Unordered List lmfao nazwa dluga asf */
@@ -255,6 +265,11 @@ img {
     box-shadow: 0 0 5px 0 #0008;
     backdrop-filter: blur(3px);
     border-radius: 0 0 8px 8px;
+}
+
+.bgeul > .elem.soon {
+    pointer-events: none;
+    user-select: none;
 }
 
 .bgeul > .elem.soon::before {
