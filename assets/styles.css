@@ -17,7 +17,7 @@ html, body, main {
 
 body {
     font-family: Inter, system-ui;
-    background: url(./background.png) 4% 0 / 100% 109% no-repeat fixed;
+    background: url("./background%20(Custom).png") 4% 0 / 100% 109% no-repeat fixed;
     color: #fff;
 }
 
